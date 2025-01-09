@@ -13,7 +13,6 @@ import "./assets/admin/css/main.css";
 // Import file js admin
 import "./assets/admin/js/jquery.min.js";
 import "./assets/admin/js/bootstrap.bundle.min.js";
-import "./assets/admin/js/apexcharts.min.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
