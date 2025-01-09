@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import React from "react";
 import axios from "axios";
 import { urlProducts} from "../../../untils/variable";
-import useCallApiNoPagination from "../../../hooks/useCallApiNoPagination";
+import useCallApi from "../../../hooks/useCallApi";
 
 const Section = () => {
     
@@ -31,8 +31,7 @@ const Section = () => {
     //     getApi();
     // },[]);
 
-    const { data, isLoading } = useCallApiNoPagination(urlProducts);
-    
+    const { data, isLoading } = useCallApi(urlProducts);
     
     // Check API call xong chưa ?
     if (isLoading === true ) return <p>Loading...</p>
